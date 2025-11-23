@@ -1,10 +1,31 @@
---- import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+---
+import MainLayout from "../layouts/MainLayout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "The Loop — Ethics of Social Media Algorithms";
+const description =
+  "An informational website exploring how social media algorithms, doomscrolling, and FOMO affect the lives of young adults.";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout title={pageTitle} description={description}>
+  <section class="space-y-4">
+    <h1 class="text-3xl font-semibold tracking-tight">
+      The Loop
+    </h1>
+
+    <p class="text-slate-300">
+      “The Loop” explores how social media algorithms influence the behaviour,
+      mental health, and decision-making of young adults (18–25). It breaks
+      down the ethics behind personalised feeds, doomscrolling, FOMO, and
+      platform design choices.
+    </p>
+
+    <p class="text-slate-400">
+      This website acts as a digital artefact for understanding the ethical
+      and legal implications of social media platforms. It combines research
+      findings, case studies, and practical solutions for healthier digital
+      habits.
+    </p>
+
+   
+  </section>
+</MainLayout>

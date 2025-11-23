@@ -1,0 +1,56 @@
+---
+const {
+  title = "The Loop",
+  description = "Exploring how social media algorithms affect young adults.",
+} = Astro.props;
+import '../styles/global.css' 
+---
+
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-950 text-slate-100">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="flex min-h-screen flex-col">
+
+      <!-- Navigation -->
+      <header class="sticky top-0 backdrop-blur">
+        <div class="mx-auto flex max-w-5xl items-center justify-center px-4 py-3">
+          <nav class="flex gap-4 text-sm">
+            <a href="/algorithms" class="hover:text-sky-400">Algorithms</a>
+            <a href="/doomscrolling" class="hover:text-sky-400">Doomscrolling</a>
+            <a href="/fomo" class="hover:text-sky-400">FOMO</a>
+            <a href="/bigger-picture" class="hover:text-sky-400">Bigger Picture</a>
+            <a href="/solutions" class="hover:text-sky-400">Solutions</a>
+            <a href="/references" class="hover:text-sky-400">References</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="mx-auto flex w-full max-w-3xl flex-1 flex-col px-4 py-12 leading-relaxed">
+        <slot />
+      </main>
+
+      <footer class="border-t border-slate-800 bg-slate-950">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 text-xs text-slate-400">
+          <p>The Loop — an exploration of social media ethics and young adults.</p>
+          <p>© {new Date().getFullYear()} <small>by Martin Macicha <a href="https://github.com/CACEMAKEJ">@CACEMAKEJ</a></small></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
