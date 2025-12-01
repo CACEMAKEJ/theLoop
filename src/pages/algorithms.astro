@@ -7,21 +7,74 @@ const description =
 ---
 
 <MainLayout title={pageTitle} description={description}>
-  <section class="space-y-4">
-    <h1 class="text-center text-3xl font-semibold tracking-tight">
-      How the "Loop" works?
-    </h1>
+  <section class="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-12">
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        Introducing "The Loop"
+      </div>
 
-    <div class="py-12">
-        <p class="text-slate-300">
-        “The Loop” explores how social media algorithms influence the behaviour,
-        mental health, and decision-making of young adults (18–25). It breaks
-        down the ethics behind personalised feeds, doomscrolling, FOMO, and
-        platform design choices.
+      <div class="space-y-4 text-lg leading-relaxed text-slate-100 md:text-xl">
+        <p>
+          After a long day of college and assignments you come home and decide to sit down
+          for a moment to relax.
         </p>
-    
-    </div>
+        <p>
+          You open your phone “just for a moment, because you need to go cook soon” and head
+          over to TikTok to pass a few minutes and catch your breath.
+        </p>
+        <p>
+          TikTok opens straight to a video you are interested in watching:
+        </p>
+        <ul class="list-disc space-y-1 pl-6 text-slate-100/90">
+          <li>Your favourite music influencer reacting to a new metal song release? <em>"Sounds interesting."</em></li>
+          <li>A longer snippet of the same track? <em>"Don’t mind if I do."</em></li>
+        </ul>
+        <p>
+          You didn’t search, you didn’t ask — yet the app simply <em>knew</em> what to show you.
+          You were going to listen to that song later in the day anyway.
+        </p>
+        <p>
+          That feeling of “wow, how did it know I was going to watch this?” is your first clue
+          that there is a powerful prediction engine sitting between you and almost everything
+          you see online.
+        </p>
+        <p>
+          That engine is the <strong>recommendation algorithm</strong>. And once you understand how
+          it works, a lot of things about social media suddenly start making sense.
+        </p>
+      </div>
+    </article>
 
-   
+    <article class="max-w-prose space-y-4 text-base leading-relaxed text-slate-200 md:text-lg">
+      <p>
+        Early social networks were basically just digital newspaper subscriptions. You followed
+        people and you saw their posts in time order: newest at the top and older ones below.
+        In the industry, they call this the <strong>reverse chronological feed</strong>.
+      </p>
+
+      <p>
+        But as platforms grew in user base, that model broke down. There was simply too much content.
+        If you follow hundreds of accounts and each of them posts at least once a day, most of what
+        they share will sink without you ever getting a chance to see it.
+      </p>
+
+      <p>
+        Modern platforms don’t treat the feed as a simple list anymore. They treat it as a
+        <strong> competition for your attention</strong>.
+      </p>
+
+      <p class="border-l-2 border-sky-500/60 pl-4 italic text-slate-100/90">
+        “Out of all the possible things we could show this person right now, which posts are most
+        likely to keep them interested?” 
+      </p>
+
+      <p>
+        — that’s the question the system asks itself every time
+        you open the app.<br>
+        Long gone are the days where your feed simply showed “what’s out there”. What you see now
+        is precisely what the algorithm has selected and ordered <em>for you</em>.
+      </p>
+    </article>
   </section>
 </MainLayout>
