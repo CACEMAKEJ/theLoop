@@ -1,0 +1,198 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "The Loop — Doomscrolling";
+const description =
+  "Why doomscrolling feels addictive, how algorithms amplify negative content, and why young adults are especially vulnerable.";
+---
+
+<MainLayout title={pageTitle} description={description}>
+  <section class="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-12">
+
+    <!-- Intro card -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        Doomscrolling
+      </div>
+
+      <div class="space-y-4 text-lg leading-relaxed text-slate-100 md:text-xl">
+        <p>
+          You open a social media app to check what’s new. A headline catches your eye.
+          Then another. And another. Before you realise it, you’ve spent far longer than
+          you intended scrolling through bad news, crises, and emotionally heavy content.
+        </p>
+
+        <p>
+          This pattern has a name: <strong>doomscrolling</strong>.
+        </p>
+      </div>
+    </article>
+
+    <!-- Definition -->
+    <article class="max-w-prose space-y-4 text-base leading-relaxed text-slate-200 md:text-lg">
+      
+      <p class="border-l-2 border-sky-500/60 pl-4 italic text-slate-100/90">
+        Doomscrolling refers to the <strong>compulsive consumption of negative or distressing
+        content</strong> online, particularly on social media feeds. It happens even when
+        the content increases stress, anxiety, or a sense of helplessness.
+      </p>
+
+      <p>
+        Importantly, doomscrolling is not just a personal habit or a lack of willpower.
+        It emerges from the way social media platforms are designed — and how human
+        psychology responds to uncertainty and threat.
+      </p>
+    </article>
+
+    <!-- Psychological mechanisms -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        Why doomscrolling is so compelling
+      </div>
+
+      <div class="space-y-6 text-lg leading-relaxed text-slate-100 md:text-xl">
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Fear and uncertainty</h4>
+
+          <p>
+            Humans are naturally drawn to information about potential threats. News about
+            danger, conflict, or crisis feels important — even urgent — because it might
+            help us prepare or protect ourselves.
+          </p>
+
+          <p>
+            Social media feeds amplify this instinct. Content related to crises, disasters,
+            or conflict often receives more visibility, keeping users in a constant state
+            of alertness.
+          </p>
+
+          <p>
+            Scrolling becomes a way to search for clarity or reassurance. Paradoxically,
+            the more we scroll, the more uncertain and anxious we often feel.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Negativity bias</h4>
+
+          <p>
+            Negative information tends to grab our attention more strongly than positive
+            or neutral content. This tendency is known as <strong>negativity bias</strong>.
+          </p>
+
+          <p>
+            Engagement-driven algorithms learn this pattern quickly. Content that provokes
+            fear, outrage, or shock keeps people scrolling longer, so similar content is
+            surfaced again and again.
+          </p>
+
+          <p>
+            Over time, this can distort how the world feels — making it seem more chaotic,
+            dangerous, or hopeless than it really is.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Stress–reward loops</h4>
+
+          <p>
+            Doomscrolling is reinforced by unpredictable rewards. Most posts increase
+            stress, but occasionally a scroll reveals something that feels informative,
+            meaningful, or socially validating.
+          </p>
+
+          <p>
+            This uneven mix of stress and relief encourages continued scrolling, even when
+            users are aware that the experience is draining rather than helpful.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Vulnerability -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        Why young adults are especially affected
+      </div>
+
+      <div class="space-y-6 text-lg leading-relaxed text-slate-100 md:text-xl">
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Post-pandemic anxiety</h4>
+
+          <p>
+            The pandemic left many young adults with higher baseline levels of anxiety.
+            Extended exposure to crisis-focused news has made negative information harder
+            to ignore and easier to fixate on.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">A constant stream of crises</h4>
+
+          <p>
+            Unlike earlier generations, today’s young adults receive real-time updates
+            about global events directly through personalised feeds.
+          </p>
+
+          <p>
+            Once a user engages with crisis-related content, algorithms tend to recommend
+            similar posts, creating loops that are difficult to step away from.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Academic and performance pressure</h4>
+
+          <p>
+            Young adulthood is already a high-pressure life stage. Doomscrolling often
+            happens during moments of exhaustion or procrastination, when users are
+            mentally drained but not ready to fully disengage.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Late-night scrolling</h4>
+
+          <p>
+            Doomscrolling frequently happens late at night. At that time, self-control
+            is lower, emotions are more intense, and negative content has a stronger impact.
+          </p>
+
+          <p>
+            Algorithms do not account for this vulnerability. They continue to optimise
+            for engagement regardless of time, mood, or mental state.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Loop -->
+    <article class="max-w-prose space-y-4 text-base leading-relaxed text-slate-200 md:text-lg">
+      <p>
+        When these factors combine, doomscrolling becomes a <strong>self-reinforcing loop</strong>:
+      </p>
+
+      <ol class="list-decimal space-y-2 pl-6">
+        <li>Negative or emotionally charged content is prioritised</li>
+        <li>Users engage due to fear, uncertainty, or curiosity</li>
+        <li>Engagement signals reinforce similar recommendations</li>
+        <li>Stress and anxiety increase</li>
+        <li>Users continue scrolling in search of relief or understanding</li>
+      </ol>
+
+      <p>
+        Doomscrolling is therefore not simply a personal failure of discipline. It is a
+        predictable outcome of systems designed to maximise attention in an environment
+        filled with uncertainty and emotional pressure.
+      </p>
+    </article>
+
+  </section>
+</MainLayout>
