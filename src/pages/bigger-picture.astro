@@ -1,0 +1,181 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "The Loop — The Bigger Picture";
+const description =
+  "How algorithms, doomscrolling, and FOMO interact to form a broader ethical problem affecting young adults.";
+---
+
+<MainLayout title={pageTitle} description={description}>
+  <section class="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-12">
+
+    <!-- Intro -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        The bigger picture
+      </div>
+
+      <div class="space-y-4 text-lg leading-relaxed text-slate-100 md:text-xl">
+        <p>
+          On their own, algorithms, doomscrolling, and FOMO can appear as separate issues.
+          One explains how content is selected, another describes a scrolling habit, and
+          the third captures a familiar social feeling.
+        </p>
+
+        <p>
+          In reality, these elements are deeply connected. Together, they form a
+          <strong>self-reinforcing system</strong> — a loop where platform design,
+          human psychology, and social pressure interact in ways that are difficult
+          for individual users to fully see or control.
+        </p>
+      </div>
+    </article>
+
+    <!-- Interaction explanation -->
+    <article class="max-w-prose space-y-4 text-base leading-relaxed text-slate-200 md:text-lg">
+      <p>
+        Recommendation algorithms decide what is visible. Doomscrolling keeps attention
+        locked on emotionally charged content. FOMO and social comparison shape how users
+        interpret what they see — and how they feel about themselves.
+      </p>
+
+      <p>
+        Over time, these elements stop functioning as isolated features and instead merge
+        into a broader ethical problem.
+      </p>
+    </article>
+
+    <!-- The loop -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        How the loop forms
+      </div>
+
+      <div class="space-y-4 text-lg leading-relaxed text-slate-100 md:text-xl">
+        <p>
+          Algorithms are optimised to maximise engagement. They learn which posts hold
+          attention and surface more of them. Content that triggers fear, anxiety,
+          outrage, or comparison often performs especially well.
+        </p>
+
+        <p>
+          Doomscrolling emerges when these systems repeatedly prioritise negative or
+          crisis-focused material. Engagement reinforces the system’s predictions,
+          increasing the likelihood of similar content appearing again.
+        </p>
+
+        <p>
+          At the same time, FOMO gives this content emotional weight. Seeing others appear
+          informed, productive, or socially active creates pressure to keep checking —
+          to stay updated and avoid being left behind.
+        </p>
+
+        <ul class="list-disc space-y-2 pl-6 text-slate-100/90">
+          <li>Algorithms prioritise emotionally charged content</li>
+          <li>Users engage due to fear, comparison, or uncertainty</li>
+          <li>Engagement reinforces recommendations</li>
+          <li>Emotional stress increases</li>
+          <li>Users return to the feed for reassurance or clarity</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Ethical themes -->
+    <article class="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-900/70 px-6 py-8 shadow-lg">
+      <div class="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-sky-300">
+        <span class="h-px w-6 bg-sky-400/70"></span>
+        Ethical concerns
+      </div>
+
+      <div class="space-y-6 text-lg leading-relaxed text-slate-100 md:text-xl">
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Autonomy and manipulation</h4>
+          <p>
+            While users feel in control of their feeds, content is continuously filtered,
+            ranked, and ordered based on behavioural predictions. Emotional responses that
+            keep engagement high are often rewarded.
+          </p>
+          <p>
+            This raises a key ethical question: at what point does personalisation become
+            manipulation?
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Lack of transparency</h4>
+          <p>
+            Most users have little insight into why certain posts appear and others do not.
+            Algorithms are complex, proprietary, and constantly changing.
+          </p>
+          <p>
+            Without transparency, users cannot meaningfully understand or challenge the
+            system shaping their attention.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Mental health concerns</h4>
+          <p>
+            Doomscrolling increases anxiety. FOMO undermines self-esteem. Late-night
+            engagement disrupts sleep. These outcomes are rarely the goal of platforms,
+            but they are predictable side effects.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Digital consent</h4>
+          <p>
+            Consent online is often bundled and uninformed. Users technically agree to
+            data collection, but few understand how their behaviour is analysed,
+            predicted, and monetised.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Exploitation of psychological vulnerabilities</h4>
+          <p>
+            Engagement-driven systems tend to reward content that aligns with moments of
+            vulnerability — anxiety, insecurity, loneliness, or stress — even when doing
+            so worsens user wellbeing.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-semibold">Unequal harm</h4>
+          <p>
+            Not everyone is affected equally. Young adults, teenagers, and users already
+            experiencing mental health challenges are more likely to experience negative
+            effects.
+          </p>
+          <p>
+            Those who benefit most from engagement-driven systems are often not the ones
+            who bear the greatest cost.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Closing -->
+    <article class="max-w-prose space-y-4 text-base leading-relaxed text-slate-200 md:text-lg">
+      <p>
+        Taken together, these issues suggest that the ethical challenge of social media
+        does not lie in one feature or one platform.
+      </p>
+
+      <p>
+        It lies in the <strong>systemic interaction</strong> between economic incentives,
+        algorithmic design, and human psychology.
+      </p>
+
+      <p>
+        Understanding this bigger picture is the first step toward asking a more important
+        question: <em>If this is the loop, how — and where — can it be broken?</em>
+      </p>
+    </article>
+
+  </section>
+</MainLayout>
